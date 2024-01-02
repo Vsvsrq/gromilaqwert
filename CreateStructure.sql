@@ -28,4 +28,4 @@ create table dbo.Basket
 	[Value] float not null,
 	PurchaseDate date default getdate(),
     DiscountValue float
-); 
+);
