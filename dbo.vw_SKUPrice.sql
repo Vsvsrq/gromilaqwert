@@ -1,4 +1,4 @@
-create view dbo.vw_SKUPrice as 
+create or alter view dbo.vw_SKUPrice as 
 select 
     ID
     ,Code

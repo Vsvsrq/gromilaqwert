@@ -1,4 +1,4 @@
-create procedure dbo.usp_MakeFamilyPurchase
+create or alter procedure dbo.usp_MakeFamilyPurchase
     @FamilySurName varchar(255)
 as
 begin

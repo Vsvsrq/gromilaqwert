@@ -1,4 +1,4 @@
-create function dbo.udf_GetSKUPrice (@ID_SKU int)
+create or alter function dbo.udf_GetSKUPrice (@ID_SKU int)
 returns decimal(18, 2) -- функция возвращает значения типа decimal
 as
 begin
@@ -13,6 +13,5 @@ begin
     where ID_SKU = @ID_SKU
     -- делю полученные значения и присваиваю результат 
     set @result = @sumValue/@sumQuantity
-
     return @result 
 end
